@@ -1,0 +1,71 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import '~react-big-calendar/lib/css/react-big-calendar.css';
+
+.resourceCalendar {
+  .container {
+    margin: 0px auto;
+  }
+
+  .horz {
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 1px;
+    justify-content: start;
+    align-content: start;
+    header div, article div:first-of-type span {
+      background-color: "[theme: themePrimary, default: #0078d7]";
+      color: "[theme: white, default: #ffffff]";
+      border-radius: 0px;
+      box-shadow: none;
+    }
+    header {
+      display: grid;
+      grid-column: 1;
+      gap: 1px;
+      justify-content: start;
+      align-content: start;
+      div {
+        padding: 0 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 27px;
+        height: 27px;
+        width: 192px;
+      }
+    }
+    article {
+      overflow-x: scroll;
+      div {
+        display: grid;
+        grid-template-columns: repeat(96, 16px);
+        grid-template-rows: 27px;
+        gap: 1px;
+        clear: both;
+        line-height: 27px;
+        span {
+          padding: 0 2px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          background-color: lightgray;
+          border-radius: 2px;
+          grid-row: 1;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        :first-child {
+          grid-column: span 4;
+        }
+      }
+    }
+  }
+
+  .title {
+    @include ms-font-xl;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+  }
+}

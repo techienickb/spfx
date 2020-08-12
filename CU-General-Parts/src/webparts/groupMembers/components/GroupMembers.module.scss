@@ -1,0 +1,16 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.groupMembers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    .personaCard {
+        width: 250px;
+        border-radius: 2px;
+        padding: 4px;
+    }
+    .personaCard:hover {
+        background-color: #f3f3f3;
+    }
+}

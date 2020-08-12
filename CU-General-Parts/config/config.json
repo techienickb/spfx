@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "page-breadcrumbs-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pageBreadcrumbs/PageBreadcrumbsWebPart.js",
+          "manifest": "./src/webparts/pageBreadcrumbs/PageBreadcrumbsWebPart.manifest.json"
+        }
+      ]
+    },
+    "resource-calendar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/resourceCalendar/ResourceCalendarWebPart.js",
+          "manifest": "./src/webparts/resourceCalendar/ResourceCalendarWebPart.manifest.json"
+        }
+      ]
+    },
+    "page-tree-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pageTree/PageTreeWebPart.js",
+          "manifest": "./src/webparts/pageTree/PageTreeWebPart.manifest.json"
+        }
+      ]
+    },
+    "group-members-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/groupMembers/GroupMembersWebPart.js",
+          "manifest": "./src/webparts/groupMembers/GroupMembersWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ResourceCalendarWebPartStrings": "lib/webparts/resourceCalendar/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "PageBreadcrumbsWebPartStrings": "lib/webparts/pageBreadcrumbs/loc/{locale}.js",
+    "PageTreeWebPartStrings": "lib/webparts/pageTree/loc/{locale}.js",
+    "GroupMembersWebPartStrings": "lib/webparts/groupMembers/loc/{locale}.js"
+  }
+}

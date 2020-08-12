@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "f7eee015-b886-4252-b0a0-6a2e1334f8a9",
+  "alias": "PageTreeWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Page Tree" },
+    "description": { "default": "Generate a FluentUI Nav tree based on the page structure" },
+    "officeFabricIconFontName": "ViewListTree",
+    "properties": {
+      "rootid": 1,
+      "expandlevels": 1
+    }
+  }]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "498e9e14-35e0-4ed5-a452-048828252a37",
+  "alias": "ResourceCalendarWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Resource Calendar" },
+    "description": { "default": "Resource Calendar Web Part - Allows Multiple Resource Calendars to be Added into a Combined Resource Calendar" },
+    "officeFabricIconFontName": "CalendarAgenda",
+    "properties": {
+      "resources": [],
+      "mode": "vertical"
+    }
+  }]
+}
